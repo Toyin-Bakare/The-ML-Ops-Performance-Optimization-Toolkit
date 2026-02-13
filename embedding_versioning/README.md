@@ -1,6 +1,7 @@
-# Project 4: Embedding Versioning + Safe Model Upgrades (Shadow Index + Promote/Rollback)
+# Embedding Versioning + Safe Model Upgrades 
+(Shadow Index + Promote/Rollback)
 
-This demo shows a production-style embedding/index upgrade workflow:
+This project shows a production-style embedding/index upgrade workflow:
 - Store documents in a source-of-truth DB (SQLite)
 - Build versioned embeddings + a FAISS index for each version (v1, v2, ...)
 - Run shadow evaluation against a golden query set
@@ -12,25 +13,16 @@ Real-life use case
 
 You want to upgrade embeddings (ex: text-embedding-3-small → newer model) to improve relevance.
 
-But embedding upgrades can silently break retrieval.
-
-So you:
-
-build the new index in shadow
-
-evaluate on a golden set
-
-only promote if it improves metrics
-
-rollback if it regresses
+But embedding upgrades can silently break retrieval.So you:
+* build the new index in shadow
+* evaluate on a golden set
+* only promote if it improves metrics
+* rollback if it regresses
 
 Why it matters
-
-Prevents production regressions
-
-Makes AI systems safer + more stable
-
-Enables continuous improvement without downtime
+* Prevents production regressions
+* Makes AI systems safer + more stable
+* Enables continuous improvement without downtime
 
 
 ## Setup
