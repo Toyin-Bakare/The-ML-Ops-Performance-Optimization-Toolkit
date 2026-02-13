@@ -8,7 +8,7 @@ MLOps &amp; Computational Efficiency Patterns: "Techniques for optimizing large-
 **Tech:** Spark, Scala, AWS  
 Tools and examples for tuning Spark workloads, reducing shuffle, and improving cluster efficiency.
 
-📁 [`spark-optimization-toolkit/`]()
+📁 [`spark-optimization-toolkit/`](https://github.com/Toyin-Bakare/The-ML-Ops-Performance-Optimization-Toolkit/tree/main/Spark_Performance_Cost_Optimization_Toolkit)
 
 ---
 
@@ -25,7 +25,7 @@ But embedding upgrades can silently break retrieval, So you can build the new in
 Why it matters
 Prevents production regressions, Enables continuous improvement without downtime
 
-📁 [`Embedding Versioning + Safe Model Upgrades`]()
+📁 [`Embedding Versioning + Safe Model Upgrades`](https://github.com/Toyin-Bakare/The-ML-Ops-Performance-Optimization-Toolkit/tree/main/embedding_versioning)
 
 ---
 
